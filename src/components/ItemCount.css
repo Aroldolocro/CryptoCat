@@ -1,0 +1,89 @@
+.S2-background{
+    height: fit-content;
+    width: 100%;
+    background-color: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.S2-content{
+    height: 9   0%;
+    width: 20vh;
+    background: rgb(54,61,74);
+    background: linear-gradient(0deg, rgba(54,61,74,1) 0%, rgba(73,88,117,1) 100%);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 1vh ;
+    padding: 1vh;
+}
+
+/*BOX-1*/
+
+.S2-C-B1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.S2-txt-1{
+    font-size: 0.8vw;
+    font-weight: 400;
+    color: white;
+}
+
+/*BOX-2*/
+
+.S2-C-B2{
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+}
+
+.S2-C-B2B1{
+    border: none;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(0, 174, 255);
+}
+
+.S2-C-B2B2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+.S2-C-B2B3{
+    border: none;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(0, 174, 255);
+}
+
+/*BOX-3*/
+
+.S2-C-B3{
+    border: 1px solid rgb(0, 174, 255);;
+    border-radius: 10px;
+    background: none;
+    font-size: 0.7vw;
+    cursor: pointer;
+    color: rgb(0, 174, 255);
+}

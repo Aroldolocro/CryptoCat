@@ -1,0 +1,17 @@
+.Cart-widget{
+    color: black;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.Cart-widget:hover{
+    color: gray;
+}
+
+.btn{
+    background: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

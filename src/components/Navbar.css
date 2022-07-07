@@ -1,0 +1,78 @@
+.N-background{
+    height: 6%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
+.N-content{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    justify-content: space-between;
+}
+
+/*BOX-1*/
+
+.N-B1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1vh;
+    background-color: none;
+}
+
+.N-txt-1{
+    margin: 0;
+    color: black;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+/*BOX-2*/
+
+.N-B2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    background-color: none;
+}
+
+.N-B2B1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.N-B2B2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.N-txt-2{
+    margin: 0;
+    color: black;
+    font-size: 1vw;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.N-txt-2:hover{
+    color: gray;
+}
+
+/*BOX-3*/
+
+.N-B3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1vh;
+    background-color: none;
+}
