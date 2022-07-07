@@ -8,8 +8,7 @@ export default function App() {
   return (
     <div className='App'>
       <Navbar/>
-      <ItemListContainer greeting={"Empecemos con USDT 😎 ."}/>
-      <ItemCount stock={5} initial={1} onAdd={(n) => alert("agregados: "+n+" productos.") }/>
+      <ItemListContainer greeting={"Bienvenido a CryptoCat 😎 ."}/>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 .S1-background{
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     display: grid;
     grid-template-columns: 98%;
@@ -11,10 +11,10 @@
 .S1-content{
     background-color: none;
     display: grid;
-    grid-template-rows: 12% 12% 12%;
+    grid-template-rows: 12% 12% 12% 64%;
     grid-template-columns: 100%;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .S1-C-B0{
@@ -48,4 +48,23 @@
     border-radius: 10px;
     color: white;
     padding: 0.5vh 2vh 0.5vh 2vh;
+}
+
+.S1-C-B2{
+    background-color: none;
+    height: 80%;
+    width: 100%;
+    display: grid;  
+    grid-template-columns: repeat(3, 20%);
+    grid-template-rows: 100%;
+    grid-column-gap: 3vh;
+    justify-content: center;
+}
+
+.S1-txt-1{
+    color: white;
+}
+
+.S1-C-B2v2{
+    display: none;
 }
