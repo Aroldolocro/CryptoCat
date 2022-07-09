@@ -19,7 +19,12 @@ const Item = ({ id, title, description, price, pictureUrl }) => {
                 <p className='I-txt-3'>Precio: {price}</p>
             </div>
             <div className='I-C-B5'>
-                <p className='I-txt-4'>ID: #{id}</p>
+                <div className='I-C-B5B1'>
+                    <p className='I-txt-4'>ID: #{id}</p>
+                </div>
+                <div className='I-C-B5B2'>
+                    <a href='/' className='I-txt-5'>Ver detalles</a>
+                </div>
             </div>
         </div>
     </div>

@@ -1,26 +1,46 @@
+import React, { useEffect, useState } from "react";
+
 import './ItemListContainer.css'
+
+import getData from "../products";
 
 import ItemList from './ItemList'
 
-import products1 from '../products1.json'
-import products2 from '../products2.json'
-import products3 from '../products3.json'
-
-const promesa = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve(document.getElementById("demo2").innerHTML)
-  }, 2000)
-})
-
-promesa.then((parametro) =>{
-  document.getElementById("demo").innerHTML = parametro
-})
-
 const ItemListContainer = ({ greeting }) => {
+
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getData
+      .then((data) => {
+        setProducts(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
+
+  useEffect(() => {
+    const getProducts = async () => {
+      try {
+        const response = await getData;
+        setProducts(response);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    getProducts();
+  }, []);
+
   return (
     <section className='S1-background'>
       <div className='S1-content'>
-        <div></div>
         <div className='S1-C-B0'></div>
         <div className='S1-C-B1'>
           <div className='S1-C-B1B1'>
@@ -28,13 +48,8 @@ const ItemListContainer = ({ greeting }) => {
           </div>
         </div>
 
-      <div className='S1-C-B2' id='demo'>
-        <p className='S1-txt-1'>Cargando...</p>
-      </div>
-      <div className='S1-C-B2v2' id='demo2'>
-        <ItemList items={products1}/>
-        <ItemList items={products2}/>
-        <ItemList items={products3}/>
+      <div className='S1-C-B2'>
+        {loading ? <span className="S1-txt-1">Cargando...</span> : <ItemList items={products}/>}
       </div>
 
       </div>
@@ -43,5 +58,3 @@ const ItemListContainer = ({ greeting }) => {
 }
 
 export default ItemListContainer
-
-{/* <ItemList items={products1}/> */}

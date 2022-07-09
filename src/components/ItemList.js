@@ -1,8 +1,10 @@
 import Item from './Item'
 
+import './ItemList.css'
+
 const ItemList = ({ items }) => {
   return (
-    <div id="demo">
+    <div className='IL-background'>
         {items.map(( {id, title, price, description, category, image}) => (
             <Item
                 id={id}
