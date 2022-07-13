@@ -1,0 +1,124 @@
+.ID-background{
+    background-color: none;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40%;
+    grid-template-rows: 90%;
+    justify-content: center;
+}
+
+.ID-container{
+    background: rgb(54,61,74);
+    background: linear-gradient(0deg, rgba(54,61,74,1) 0%, rgba(73,88,117,1) 100%);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: auto auto;
+    padding: 3vh;
+    margin: 1vh 0vh 0vh 0vh;
+}
+
+.ID-C-B1{
+    border-bottom: 1px solid rgb(199, 199, 199, 0.5) ;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ID-txt-1{
+    margin: 0;
+    font-size: 2vw;
+    color: white;
+}
+
+.ID-C-B2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/3;
+    border-bottom: 1px solid rgb(199, 199, 199, 0.5) ;
+}
+
+.ID-img-1{
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
+}
+
+.ID-C-B3{
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(199, 199, 199, 0.5) ;
+}
+
+.ID-txt-2{
+    margin: 0;
+    font-size: 0.8vw;
+    text-align: left;
+    color: white;
+}
+
+.ID-txt-3{
+    margin: 0;
+    font-size: 0.8vw;
+    text-align: left;
+    color: gold;
+    text-decoration: underline;
+}
+
+.ID-C-B4{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(199, 199, 199, 0.5) ;
+    padding: 3vh 0vh 3vh 3vh;
+    cursor: pointer;
+}
+
+.ID-txt-4{
+    margin: 0;
+    font-size: 0.8vw;
+    border: 1px solid rgb(0, 174, 255);
+    border-radius: 10px;
+    padding: 1vh;
+    color: white;
+}
+
+.ID-C-B5{
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(199, 199, 199, 0.5) ;
+}
+
+.ID-txt-5{
+    margin: 0;
+    font-size: 0.8vw;
+    color: white;
+}
+
+.ID-C-B6{
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(199, 199, 199, 0.5) ;
+}
+
+.ID-C-B7{
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(199, 199, 199, 0.5) ;
+}
