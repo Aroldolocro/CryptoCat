@@ -6,6 +6,8 @@ import getData from "../products";
 
 import ItemList from './ItemList'
 
+import ItemDetailContainer from "./ItemDetailContainer";
+
 const ItemListContainer = ({ greeting }) => {
 
   const [products, setProducts] = useState([]);
@@ -49,7 +51,9 @@ const ItemListContainer = ({ greeting }) => {
         </div>
 
       <div className='S1-C-B2'>
-        {loading ? <span className="S1-txt-1">Cargando...</span> : <ItemList items={products}/>}
+        {/* {loading ? <span className="S1-txt-1">Cargando...</span> : <ItemList items={products}/>} */}
+        MI VIEJO
+        <ItemDetailContainer/>
       </div>
 
       </div>
