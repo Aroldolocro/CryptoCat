@@ -1,15 +1,18 @@
 .N-background{
     height: 6%;
     width: 100%;
-    background-color: white;
+    background-color: whitesmoke;
     position: fixed;
     top: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
 }
 
 .N-content{
     height: 100%;
-    width: 100%;
-    background-color: white;
+    width: 98%;
+    background-color: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100%;
@@ -22,7 +25,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 1vh;
     background-color: none;
 }
 
@@ -31,13 +33,14 @@
     color: black;
     font-size: 2vw;
     font-weight: 400;
+    text-decoration: none;
 }
 
 /*BOX-2*/
 
 .N-B2{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100%;
     background-color: none;
 }
@@ -46,12 +49,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: none;
 }
 
 .N-B2B2{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: none;
+}
+
+.N-B2B3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
 }
 
 .N-txt-2{
@@ -61,6 +73,7 @@
     font-weight: 400;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .N-txt-2:hover{

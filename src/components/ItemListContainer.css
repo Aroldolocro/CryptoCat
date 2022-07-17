@@ -1,75 +1,86 @@
 .S1-background{
     height: 100vh;
     width: 100%;
-    display: grid;
-    grid-template-columns: 98%;
-    grid-template-rows: 100%;
+    display: flex;
     justify-content: center;
     background-color: none;
+    z-index: 0;
 }
 
 .S1-content{
     background-color: none;
-    display: grid;
-    grid-template-rows:  6% 15% 79%;
-    grid-template-columns: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-/*BOX-0*/
-
-.S1-C-B0{
-    background-color: none;
     height: 100%;
-    width: 100%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 6% 94%;
 }
-
-/*BOX-1*/
 
 .S1-C-B1{
-    height: 100%;
-    width: 100%;
-    background-color: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: none;
+    border: none
 }
-
-.S1-C-B1B1{
-    height: fit-content;
-    width: auto;
-    background-color: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1vw;
-    font-size: 500;
-    background: rgb(54,61,74);
-    background: linear-gradient(0deg, rgba(54,61,74,1) 0%, rgba(73,88,117,1) 100%);
-    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
-    border-radius: 10px;
-    color: white;
-    padding: 3vh 3vh 3vh 3vh;
-}
-
-/*BOX-2*/
 
 .S1-C-B2{
+    border: none;
     background-color: none;
-    height: 100%;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+}
+
+.S1-C-B2B1{
+    background-color: none;
+    display: grid;
+    align-items: center;
+}
+
+.B2B1B1{
+    background-color: none;
+    display: grid;
+    height: fit-content;
+    grid-row-gap: 3vh ;
 }
 
 .S1-txt-1{
+    margin: 0;
     color: white;
+    font-size: 4vh;
+    font-weight: 300;
+    background-color: none;
+    height: fit-content;
+}
+
+.S1-txt-2{
+    margin: 0;
+    color: white;
+    font-size: 5vh;
+    font-weight: 400;
+    height: fit-content;
+}
+
+.S1-txt-3{
+    margin: 0;
+    color: white;
+    font-size: 2vh;
+    font-weight: 300;
+    height: fit-content;
+    line-height: 3vh;
+}
+
+.S1-C-B2B2{
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.S1-C-B2v2{
-    display: none;
+.B2B2B1{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.S1-img-1{
+    height: 100%;
 }
