@@ -2,6 +2,8 @@ import { useState } from 'react'
 
 import './ItemCount.css'
 
+import products from '../products';
+
 const ItemCount = ({stock, initial, onAdd}) => {
 
 const [count, setCount] = useState(initial);
@@ -18,7 +20,7 @@ const decrementar = () => {
 
       <div className='S2-content'>
 
-      <div className='S2-C-B1'><p className='S2-txt-1'>USDT</p></div>
+      <div className='S2-C-B1'><p className='S2-txt-1'></p></div>
       <div className='S2-C-B2'>
         <button className='S2-C-B2B1' onClick={decrementar}><p className='txt-2'>-</p></button>
         <div className='S2-C-B2B2'>{count}</div>

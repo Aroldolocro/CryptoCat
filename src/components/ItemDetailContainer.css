@@ -124,15 +124,13 @@
 
 .B2-C-2{
     background-color: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .B2-C-2B1{
     background-color: none;
-    height: 40%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,6 +146,12 @@
     padding: 0.6vh 1vh 0.6vh 1vh;
     width: fit-content;
     cursor: pointer;
+}
+
+.B2-C-2B2{
+    background-color: none;
+    display: flex;
+    align-items: flex-end;
 }
 
 .IDC-txt-1{

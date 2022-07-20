@@ -58,7 +58,7 @@ const CategoryContainer = () => {
 
         {loading ? <span className='ICC-txt-5'>Cargando...</span> : 
 
-        <div className="CC-C-B2">
+        <div className="CC-C-B2"> 
           {products.filter(pro => pro.category == "topcoins").map(filteredPro => (
             <div className="ICC-background">
               <div className="ICC-content">

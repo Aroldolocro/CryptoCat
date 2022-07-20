@@ -2,6 +2,8 @@ import './ItemDetailContainer.css'
 
 import ItemDetail from './ItemDetail'
 
+import ItemCount from './ItemCount'
+
 import products from '../products';
 
 import React, { useEffect, useState } from "react";
@@ -76,7 +78,10 @@ const ItemDetailContainer = () => {
             </div>
             <div className='B2-C-2'>
               <div className='B2-C-2B1'>
-                  <p className='IDC-txt-6'>$: {nose.price}</p>
+                <p className='IDC-txt-6'>$: {nose.price}</p>
+                </div>
+              <div className='B2-C-2B2'>
+                <ItemCount stock={5} initial={1} onAdd={(n) => alert("agregados: "+n+" productos.") }/>
               </div>
             </div>
           </div>

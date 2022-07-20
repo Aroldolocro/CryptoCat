@@ -10,12 +10,6 @@
 .S2-content{
     height: 9   0%;
     width: 20vh;
-    background: rgb(54,61,74);
-    background: linear-gradient(0deg, rgba(54,61,74,1) 0%, rgba(73,88,117,1) 100%);
-    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.5);
-    border-radius: 10px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(3, 1fr);
