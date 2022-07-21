@@ -15,8 +15,14 @@ const decrementar = () => {
     setCount((valAnt) => (valAnt > 1 ? count - 1 : count))
 };
 
+const [open, setOpen] = useState(true)
+
+const [open2, setOpen2] = useState(false)
+
   return (
-    <div className='S2-background'> 
+  <div className='S2-background'> 
+  {open2 && <p className='txt-4 animate__animated animate__pulse'>Cryptos agregas al carrito</p>}
+  {open && 
 
       <div className='S2-content'>
 
@@ -34,11 +40,13 @@ const decrementar = () => {
           else {
               alert("No hay stock")
           }
+          setOpen(false)
+          setOpen2(true)
       }} >
           <p className='txt-3'>COMPRAR</p>
   </button>
 
-      </div>
+      </div>}
 
     </div>
   )

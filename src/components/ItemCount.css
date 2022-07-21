@@ -81,3 +81,14 @@
     cursor: pointer;
     color: rgb(0, 174, 255);
 }
+
+.txt-4{
+    border: 1px solid rgb(0, 174, 255);;
+    border-radius: 10px;
+    background: none;
+    font-size: 0.7vw;
+    cursor: pointer;
+    color: rgb(0, 174, 255);
+    padding: 3vh;
+    color: white;
+}
